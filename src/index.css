@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-6;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 bg-earthy-green text-white rounded-lg hover:bg-earthy-dark transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-earthy-light text-earthy-dark rounded-lg hover:bg-earthy-brown transition-colors duration-300;
+  }
+
+  .text-heading {
+    @apply text-2xl font-bold text-earthy-dark;
+  }
+
+  .text-subheading {
+    @apply text-lg font-semibold text-earthy-brown;
+  }
+}
